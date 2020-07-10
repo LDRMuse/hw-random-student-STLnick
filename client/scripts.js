@@ -2,8 +2,8 @@ const students = []
 
 /**
  * Getting a random integer between two values, inclusive (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
- * @param {number} min 
- * @param {number} max 
+ * @param {number} min
+ * @param {number} max
  * @returns {number}
  */
 function getRandomIntInclusive(min, max) {
@@ -13,3 +13,23 @@ function getRandomIntInclusive(min, max) {
 }
 
 // TODO: Upon clicking your 'giant button', use 'getRandomIntInclusive' to randomly pick a student from your Array. You can just log that for now.
+
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault()
+  // Get student name entered
+  const enteredStudent = document.querySelector('input').value
+  // Check if student is in array
+  const exists = students.find(student => student === enteredStudent)
+  // If 'student' is NOT in array already push
+  if (exists === undefined) {
+    students.push(enteredStudent)
+  }
+  console.log(students)
+})
+
+document.querySelector('.giant-btn').addEventListener('click', () => {
+  // Randomly generate a number
+  const randInt = getRandomIntInclusive(0, students.length - 1)
+  // Log student using random number
+  console.log(students[randInt])
+})
