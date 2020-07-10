@@ -22,13 +22,14 @@ form {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 input {
   border-radius: 5px;
   margin: 2em 0;
   padding: 0.5em;
+  text-align: center;
 }
 
 button {
