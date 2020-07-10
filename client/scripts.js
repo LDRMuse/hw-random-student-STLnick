@@ -1,6 +1,8 @@
 const students = []
 const inputName = document.querySelector('#name')
+const addBtn = document.querySelector('.add-btn')
 const randomName = document.querySelector('#random')
+const giantBtn = document.querySelector('.giant-btn')
 
 /**
  * Getting a random integer between two values, inclusive (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
@@ -28,9 +30,10 @@ document.querySelector('form').addEventListener('submit', (e) => {
   inputName.value = ''
 })
 
-document.querySelector('.giant-btn').addEventListener('click', () => {
+giantBtn.addEventListener('click', () => {
   // Randomly generate a number
   const randInt = getRandomIntInclusive(0, students.length - 1)
+
   // If Students have been entered render text with student name using random number
   if (students.length !== 0) {
     randomName.value = students[randInt]
