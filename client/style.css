@@ -49,3 +49,7 @@ button {
   padding: 1.25em 0;
   text-transform: uppercase;
 }
+
+.btn:active {
+  background-color: #999;
+}
