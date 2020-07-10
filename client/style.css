@@ -1,9 +1,50 @@
 body {
-  font-family: 'Gugi';
+  align-items: center;
+  background-color: #222;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gugi', cursive;
+  font-size: 20px;
 }
 
 .screen-reader-text {
   left: -9999px;
   position: absolute;
   top: -9999px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+
+input {
+  border-radius: 5px;
+  margin: 2em 0;
+  padding: 0.5em;
+}
+
+button {
+  background-color: #393939;
+  border: 3px solid #eee;
+  border-radius: 10px;
+  color: #eee;
+  outline: none;
+  padding: 0.5em;
+}
+
+.giant-btn {
+  border-radius: 100%;
+  box-shadow: 0 0 0.5em #fff;
+  font-size: 3.052em;
+  max-width: 85vw;
+  padding: 1.25em 0;
+  text-transform: uppercase;
 }
