@@ -52,7 +52,7 @@ button {
 button:active,
 button:hover,
 button:focus {
-  background-color: #999;
+  background-color: #666;
   box-shadow: 0 0 0.5em 0.25em #fff;
 }
 
