@@ -1,5 +1,32 @@
 import { Name, RandomButton, RandomName, SubmitButton } from './components'
 
+const props = {
+  Button: [
+    {
+      type: 'submit',
+      text: 'Add Student',
+      class: 'add-btn'
+    },
+    {
+      type: 'button',
+      text: 'Random Student',
+      class: 'giant-btn'
+    }
+  ],
+  Input: [
+    {
+      label: 'Name',
+      for: 'name',
+      type: 'text'
+    },
+    {
+      label: '(Random Student)',
+      for: 'random',
+      type: 'text'
+    }
+  ]
+}
+
 function render() {
   document.querySelector('#root').innerHTML = `
     <form>
