@@ -26,10 +26,17 @@ form {
 }
 
 input {
+  border: none;
   border-radius: 5px;
   margin: 2em 0;
+  outline: none;
   padding: 0.5em;
   text-align: center;
+  transition: box-shadow 0.4s;
+}
+
+input:focus {
+  box-shadow: 0 0 0.5em 0.25em #fff;
 }
 
 button {
@@ -39,6 +46,14 @@ button {
   color: #eee;
   outline: none;
   padding: 0.5em;
+  transition: background-color, box-shadow 0.4s;
+}
+
+button:active,
+button:hover,
+button:focus {
+  background-color: #999;
+  box-shadow: 0 0 0.5em 0.25em #fff;
 }
 
 .giant-btn {
@@ -48,8 +63,4 @@ button {
   max-width: 85vw;
   padding: 1.25em 0;
   text-transform: uppercase;
-}
-
-.btn:active {
-  background-color: #999;
 }
