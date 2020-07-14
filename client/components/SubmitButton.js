@@ -1,1 +1,0 @@
-export default () => `<button type="submit" class="btn add-btn">Add Student</button>`
