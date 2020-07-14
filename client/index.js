@@ -1,4 +1,4 @@
-import { Name, RandomButton, RandomName, SubmitButton } from './components'
+import { RandomButton, SubmitButton, Input } from './components'
 
 const props = {
   Button: [
@@ -17,11 +17,13 @@ const props = {
     {
       label: 'Name',
       for: 'name',
+      readonly: '',
       type: 'text'
     },
     {
       label: '(Random Student)',
       for: 'random',
+      readonly: 'readonly',
       type: 'text'
     }
   ]
@@ -30,9 +32,9 @@ const props = {
 function render() {
   document.querySelector('#root').innerHTML = `
     <form>
-      ${Name()}
+      ${Input(props.Input[0])}
       ${SubmitButton()}
-      ${RandomName()}
+      ${Input(props.Input[1])}
       ${RandomButton()}
     </form>
   `
