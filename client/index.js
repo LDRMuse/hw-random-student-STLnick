@@ -41,7 +41,6 @@ function render() {
 
   const students = []
   const inputName = document.querySelector('#name')
-  const addBtn = document.querySelector('.add-btn')
   const randomName = document.querySelector('#random')
   const giantBtn = document.querySelector('.giant-btn')
 
