@@ -1,6 +1,6 @@
 body {
   align-items: center;
-  background-color: #222;
+  background: repeating-linear-gradient(45deg, #222, #444 0.5em);
   color: #eee;
   display: flex;
   flex-direction: column;
