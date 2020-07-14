@@ -3,4 +3,4 @@ function render(input) {
     <input type="${input.type}" id="${input.for}" placeholder="${input.label}" ${input.readonly}></input>`
 }
 
-export default (props) => render(props)
+export default (prop) => render(prop)

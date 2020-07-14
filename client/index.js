@@ -1,41 +1,38 @@
-import { Button, Input } from './components'
+import { Form } from './components'
 
-const props = {
-  Button: [
-    {
+const props = [
+  {
+    Button: {
       type: 'submit',
       text: 'Add Student',
       class: 'add-btn'
     },
-    {
-      type: 'button',
-      text: 'Random Student',
-      class: 'giant-btn'
-    }
-  ],
-  Input: [
-    {
+    Input: {
       label: 'Name',
       for: 'name',
       readonly: '',
       type: 'text'
+    }
+  },
+  {
+    Button: {
+      type: 'button',
+      text: 'Random Student',
+      class: 'giant-btn'
     },
-    {
+    Input: {
       label: '(Random Student)',
       for: 'random',
       readonly: 'readonly',
       type: 'text'
     }
-  ]
-}
+  }
+]
 
 function render() {
   document.querySelector('#root').innerHTML = `
     <form>
-      ${Input(props.Input[0])}
-      ${Button(props.Button[0])}
-      ${Input(props.Input[1])}
-      ${Button(props.Button[1])}
+      ${Form(props)}
     </form>
   `
 
