@@ -1,4 +1,4 @@
-import { RandomButton, SubmitButton, Input } from './components'
+import { Button, Input } from './components'
 
 const props = {
   Button: [
@@ -33,9 +33,9 @@ function render() {
   document.querySelector('#root').innerHTML = `
     <form>
       ${Input(props.Input[0])}
-      ${SubmitButton()}
+      ${Button(props.Button[0])}
       ${Input(props.Input[1])}
-      ${RandomButton()}
+      ${Button(props.Button[1])}
     </form>
   `
 
