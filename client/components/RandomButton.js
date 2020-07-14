@@ -1,0 +1,1 @@
+export default () => `<button class="btn giant-btn">Random Student</button>`
